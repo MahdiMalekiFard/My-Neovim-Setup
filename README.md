@@ -1,4 +1,4 @@
-# kickstart.nvim
+# My Custom Nvim Setup
 
 ## Introduction
 
@@ -14,7 +14,7 @@ A starting point for Neovim that is:
 
 ### Install Neovim
 
-Kickstart.nvim targets *only* the latest
+My custom nvim targets *only* the latest
 ['stable'](https://github.com/neovim/neovim/releases/tag/stable) and latest
 ['nightly'](https://github.com/neovim/neovim/releases/tag/nightly) of Neovim.
 If you are experiencing issues, please make sure you have the latest versions.
@@ -36,7 +36,7 @@ External Requirements:
 > See [Install Recipes](#Install-Recipes) for additional Windows and Linux specific notes
 > and quick install snippets
 
-### Install Kickstart
+### Install My Custom Nvim
 
 > **NOTE**
 > [Backup](#FAQ) your previous configuration (if any exists)
@@ -57,7 +57,7 @@ fork to your machine using one of the commands below, depending on your OS.
 
 > **NOTE**
 > Your fork's url will be something like this:
-> `https://github.com/<your_github_username>/kickstart.nvim.git`
+> `https://github.com/<your_github_username>/My-Neovim-Setup.git`
 
 You likely want to remove `lazy-lock.json` from your fork's `.gitignore` file
 too - it's ignored in the kickstart repo to make maintenance easier, but it's
@@ -71,7 +71,7 @@ too - it's ignored in the kickstart repo to make maintenance easier, but it's
 <details><summary> Linux and Mac </summary>
 
 ```sh
-git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+git clone https://github.com/MahdiMalekiFard/My-Neovim-Setup.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 ```
 
 </details>
@@ -81,13 +81,13 @@ git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HO
 If you're using `cmd.exe`:
 
 ```
-git clone https://github.com/nvim-lua/kickstart.nvim.git "%localappdata%\nvim"
+git clone https://github.com/MahdiMalekiFard/My-Neovim-Setup.git "%localappdata%\nvim"
 ```
 
 If you're using `powershell.exe`
 
 ```
-git clone https://github.com/nvim-lua/kickstart.nvim.git "${env:LOCALAPPDATA}\nvim"
+git clone https://github.com/MahdiMalekiFard/My-Neovim-Setup.git "${env:LOCALAPPDATA}\nvim"
 ```
 
 </details>
@@ -146,7 +146,7 @@ examples of adding popularly requested plugins.
 
 Below you can find OS specific install instructions for Neovim and dependencies.
 
-After installing all the dependencies continue with the [Install Kickstart](#Install-Kickstart) step.
+After installing all the dependencies continue with the [Install Neovim](#Install-Kickstart) step.
 
 #### Windows Installation
 
