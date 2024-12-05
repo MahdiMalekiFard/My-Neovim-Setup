@@ -596,14 +596,14 @@ require('lazy').setup({
       })
 
       -- Change diagnostic symbols in the sign column (gutter)
-      -- if vim.g.have_nerd_font then
-      --   local signs = { ERROR = '', WARN = '', INFO = '', HINT = '' }
-      --   local diagnostic_signs = {}
-      --   for type, icon in pairs(signs) do
-      --     diagnostic_signs[vim.diagnostic.severity[type]] = icon
-      --   end
-      --   vim.diagnostic.config { signs = { text = diagnostic_signs } }
-      -- end
+      if vim.g.have_nerd_font then
+        local signs = { ERROR = '', WARN = '', INFO = '', HINT = '' }
+        local diagnostic_signs = {}
+        for type, icon in pairs(signs) do
+          diagnostic_signs[vim.diagnostic.severity[type]] = icon
+        end
+        vim.diagnostic.config { signs = { text = diagnostic_signs } }
+      end
 
       -- LSP servers and clients are able to communicate to each other what features they support.
       --  By default, Neovim doesn't support everything that is in the LSP specification.
@@ -646,6 +646,34 @@ require('lazy').setup({
               },
               -- You can toggle below to ignore Lua_LS's noisy `missing-fields` warnings
               -- diagnostics = { disable = { 'missing-fields' } },
+            },
+          },
+        },
+
+        intelephense = {
+          settings = {
+            intelephense = {
+              environment = {
+                phpVersion = '8.3',
+              },
+              files = {
+                maxSize = 1000000,
+                associations = { '*.php', '*.blade.php' },
+              },
+              stubs = {
+                'laravel',
+                'eloquent',
+                'blade',
+                'core',
+                'spl',
+                'json',
+                'bcmath',
+                'ctype',
+                'fileinfo',
+                'mbstring',
+                'openssl',
+                'pdo',
+              },
             },
           },
         },
